@@ -7,7 +7,8 @@ body {
     padding: 0;
     font-family: "Syncopate", sans-serif;
     min-height: 100vh;
-    background-color: #e5daff;
+    background: linear-gradient(180deg, #d4a5ff 0%, #e5daff 50%, #bed5ff 100%);
+    background-attachment: fixed;
 }
 
 .header-container {
