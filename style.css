@@ -9,11 +9,6 @@ body {
     min-height: 100vh;
     background-color: #e5daff;
 }
-.links-grouping {
-    background-color: #bed5ff;
-}
-
-
 
 .header-container {
     text-align: center;
@@ -42,13 +37,14 @@ p {
 }
 
 .links-container {
-    max-width: 600px;
+    max-width: 700px;
+    width: 90%;
     margin: 40px auto;
-    padding: 30px 40px;
+    padding: 40px;
     display: flex;
     flex-direction: column;
     gap: 15px;
-    background-color: #e8e4f3;
+    background-color: #bed5ff;
     border-radius: 16px;
 }
 
