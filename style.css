@@ -44,14 +44,16 @@ p {
 .links-container {
     max-width: 600px;
     margin: 40px auto;
-    padding: 0 20px;
+    padding: 30px 40px;
     display: flex;
     flex-direction: column;
     gap: 15px;
+    background-color: #e8e4f3;
+    border-radius: 16px;
 }
 
 .link-button {
-    display: inline-block;
+    display: block;
     padding: 15px 20px;
     background-color: #1e4a55;
     color: white;
