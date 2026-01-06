@@ -9,6 +9,11 @@ body {
     min-height: 100vh;
     background-color: rgb(230, 243, 255);
 }
+.links-grouping {
+    background-color: rgb(190, 213, 255);
+}
+
+
 
 .header-container {
     text-align: center;
