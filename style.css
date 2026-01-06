@@ -12,60 +12,74 @@ body {
 
 .header-container {
     text-align: center;
-    width: 100%;
-    padding: 20px;
+    max-width: 600px;
+    width: 90%;
+    padding: 40px 20px 20px;
     margin: 0 auto;
 }
 
 .center-img {
     display: block;
-    margin: 0 auto 20px auto;
+    margin: 0 auto 30px auto;
     max-width: 100%;
     width: 100%;
-    max-width: 800px;
+    max-width: 500px;
     height: auto;
 }
 
 h1 {
     margin: 20px 0 10px 0;
-    font-size: 2em;
+    font-size: clamp(1.5rem, 5vw, 2.5rem);
+    font-weight: 700;
 }
 
 p {
-    margin: 10px 0;
+    margin: 10px 0 20px;
     color: #1b064b;
+    font-size: clamp(0.875rem, 2vw, 1rem);
 }
 
 .links-container {
-    max-width: 700px;
+    max-width: 600px;
     width: 90%;
-    margin: 40px auto;
-    padding: 40px;
+    margin: 0 auto 40px;
+    padding: 30px 20px;
     display: flex;
     flex-direction: column;
-    gap: 15px;
+    gap: 12px;
     background-color: #bed5ff;
     border-radius: 16px;
 }
 
 .link-button {
     display: block;
-    padding: 15px 20px;
+    padding: 16px 24px;
     background-color: #1e4a55;
     color: white;
     text-decoration: none;
     text-align: center;
-    border-radius: 8px;
-    font-size: 16px;
-    font-weight: 500;
+    border-radius: 12px;
+    font-size: clamp(0.875rem, 2vw, 1rem);
+    font-weight: 700;
     transition: all 0.3s ease;
-    border: none;
+    border: 2px solid #1e4a55;
     cursor: pointer;
 }
 
 .link-button:hover {
     background-color: white;
-    color: #210958;
+    color: #1e4a55;
     transform: translateY(-2px);
-    box-shadow: 0 4px 12px rgba(33, 9, 88, 0.3);
+    box-shadow: 0 6px 20px rgba(30, 74, 85, 0.3);
+}
+
+@media (min-width: 768px) {
+    .links-container {
+        padding: 40px;
+        gap: 15px;
+    }
+    
+    .link-button {
+        padding: 18px 32px;
+    }
 }
