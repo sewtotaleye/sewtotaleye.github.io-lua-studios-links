@@ -45,7 +45,7 @@ p {
 }
 
 .link-button {
-    display: block;
+    display: inline-block;
     padding: 15px 20px;
     background-color: #210958;
     color: white;
@@ -55,7 +55,8 @@ p {
     font-size: 16px;
     font-weight: 500;
     transition: all 0.3s ease;
-    border: 2px solid #210958;
+    border: none;
+    cursor: pointer;
 }
 
 .link-button:hover {
