@@ -7,7 +7,7 @@ body {
     padding: 0;
     font-family: "Syncopate", sans-serif;
     min-height: 100vh;
-    background: linear-gradient(180deg, #d4a5ff 0%, #e5daff 50%, #bed5ff 100%);
+    background: linear-gradient(180deg, #9ce4e4 0%, #8ce0e0 25%, #21acac 50%, #4461e6 75%, #1073ac 100%);
     background-attachment: fixed;
 }
 
