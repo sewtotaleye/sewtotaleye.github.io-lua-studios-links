@@ -73,6 +73,50 @@ p {
     box-shadow: 0 6px 20px rgba(30, 74, 85, 0.3);
 }
 
+.discord-special {
+    position: relative;
+    background: linear-gradient(135deg, #5865F2 0%, #7289DA 100%);
+    border-color: #5865F2;
+    animation: shake 2s ease-in-out infinite;
+    overflow: hidden;
+}
+
+.discord-special::before {
+    content: "";
+    position: absolute;
+    top: -50%;
+    left: -50%;
+    width: 200%;
+    height: 200%;
+    background: radial-gradient(circle, rgba(255,255,255,0.3) 0%, transparent 70%);
+    animation: sparkle 3s linear infinite;
+}
+
+.discord-special:hover {
+    background: white;
+    color: #5865F2;
+    border-color: #5865F2;
+    animation: shake-intense 0.5s ease-in-out infinite;
+}
+
+@keyframes shake {
+    0%, 100% { transform: translateX(0) rotate(0deg); }
+    10%, 30%, 50%, 70%, 90% { transform: translateX(-2px) rotate(-1deg); }
+    20%, 40%, 60%, 80% { transform: translateX(2px) rotate(1deg); }
+}
+
+@keyframes shake-intense {
+    0%, 100% { transform: translateX(0) translateY(-2px) rotate(0deg); }
+    25% { transform: translateX(-3px) translateY(-2px) rotate(-2deg); }
+    50% { transform: translateX(3px) translateY(-2px) rotate(0deg); }
+    75% { transform: translateX(-3px) translateY(-2px) rotate(2deg); }
+}
+
+@keyframes sparkle {
+    0% { transform: translate(-50%, -50%) rotate(0deg); }
+    100% { transform: translate(-50%, -50%) rotate(360deg); }
+}
+
 @media (min-width: 768px) {
     .links-container {
         padding: 40px;
